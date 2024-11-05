@@ -1,0 +1,558 @@
+/* General styling for all main sections */
+.hero,
+.reservations-section,
+.menu-section,
+.testimonials-section,
+.newsletter-section,
+.location-section {
+    background-color: #f5f5f5; /* Light grey background for main sections */
+    color: #333; /* Dark text color for readability */
+    padding: 50px 20px; /* Uniform padding for better layout */
+    text-align: center;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    margin-bottom: 20px;
+}
+
+/* Hero Section Styling */
+.hero {
+    background-color: #e0f7fa; /* Light blue background specific to hero section */
+    color: #00796b; /* Dark teal text color for contrast */
+}
+
+/* Button Styling for Call to Action in Welcome Section */
+.hero button {
+    background-color: #00796b;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.hero button:hover {
+    background-color: #004d40; /* Darker green on hover */
+}
+
+/* Add keyframes for animation */
+
+@keyframes slideDown {
+
+    0% {
+
+        transform: translateY(-50px);
+
+        opacity: 0;
+
+    }
+
+    100% {
+
+        transform: translateY(0);
+
+        opacity: 1;
+
+    }
+
+}
+
+
+
+/* Styling for the header */
+
+.header {
+
+    background-color: #3a6351;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px 0; /* Increased padding for spacing */
+
+}
+
+
+
+/* Styling for main headline with animation */
+
+.main-headline {
+
+    font-size: 48px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px; /* Extra space between headline and nav */
+
+    animation: slideDown 0s ease-out;
+
+    opacity: 0;
+
+    animation-fill-mode: forwards;
+
+}
+
+
+/* Navigation Styling */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.nav-links a:hover {
+    color: #ff6f61; /* Hover color to match primary theme */
+}
+
+
+
+/* Hero section animation and color adjustments */
+
+.hero {
+
+    background-image: url('river.jpg');
+
+    background-size: cover;
+
+    background-position: center;
+
+    height: 60vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+
+.animated-text {
+
+    animation: slideDown 1.5s ease-out;
+
+    opacity: 0;
+
+    animation-fill-mode: forwards;
+
+}
+
+
+
+.hero h2 {
+
+    font-size: 48px;
+
+    margin-bottom: 10px;
+
+    color: #4fc3f7; /* Light Blue Color */
+
+    animation-delay: 0.3s;
+
+}
+
+
+
+.hero p {
+
+    font-size: 18px;
+
+    color: #80deea; /* Light Cyan Color */
+
+    animation-delay: 0.6s;
+
+}
+
+
+
+/* About, gallery, rooms, and contact sections with padding for long scrolling */
+
+.about-section, .gallery-section, .rooms-section, .contact-section {
+
+    padding: 80px 20px; /* Increased padding for extended scroll */
+
+    text-align: center;
+
+    background-color: white;
+
+    margin-bottom: 20px;
+
+}
+
+/* Mobile Menu Toggle Button */
+
+.menu-toggle {
+
+    display: none; /* Initially hidden for larger screens */
+
+    font-size: 30px;
+
+    color: white;
+
+    cursor: pointer;
+
+    position: absolute;
+
+    right: 20px;  /* Positioned at the top-right corner */
+
+    top: 20px;
+
+}
+
+
+
+/* Navigation links styling */
+
+.nav-links {
+
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 10px;
+
+}
+
+
+
+/* Navigation links for desktop */
+
+.nav-links li {
+
+    margin: 0 15px;
+
+}
+
+
+
+.nav-links a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+}
+
+/* Styling for the header */
+
+.header {
+
+    background-color: #3a6351;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 0;
+
+    position: relative;
+
+}
+
+
+
+
+
+/* Hide navigation links on mobile */
+
+@media (max-width: 768px) {
+
+    .nav-links {
+
+        display: none;
+
+        flex-direction: column;
+
+        background-color: #3a6351;
+
+        position: absolute;
+
+        top: 60px;
+
+        right: 0;
+
+        width: 100%;
+
+    }
+
+
+
+    /* Show navigation when the menu is open */
+
+    .nav-open {
+
+        display: flex !important;
+
+    }
+
+
+
+    /* Show the hamburger menu icon */
+
+    .menu-toggle {
+
+        display: block;
+
+    }
+
+
+
+    /* Style individual menu items for mobile */
+
+    .nav-links li {
+
+        margin: 10px 0;
+
+        text-align: center;
+
+    }
+
+}
+
+
+
+/* Styling for the footer */
+
+.footer {
+
+    background-color: #3a6351;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+}
+
+
+
+.social-links {
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.social-links a {
+
+    color: white;
+
+    font-size: 24px;
+
+    margin: 0 10px;
+
+    text-decoration: none;
+
+}
+
+
+
+.social-links a:hover {
+
+    color: #80deea; /* Light Cyan hover effect */
+
+}
+
+
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+
+    .gallery-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+}
+
+/* Ensure the body takes full height */
+
+body {
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 100vh; /* Full viewport height */
+
+    margin: 0;
+
+}
+
+
+
+/* Main content will expand to fill the remaining space */
+
+.main-content {
+
+    flex: 1;
+
+}
+
+
+
+
+
+/* Footer should stick to the bottom */
+
+.footer {
+
+    background-color: #3a6351;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 10px 0;
+
+    position: relative;
+
+    bottom: 0;
+
+    width: 100%;
+
+    margin-top: auto; /* Ensures the footer is pushed to the bottom */
+
+}
+
+
+
+
+/* Reservations Section Styling */
+.reservations-section {
+    background-color: #ffebee; /* Light pink background */
+    color: #c62828; /* Dark red text color */
+}
+
+/* Menu Section Styling */
+.menu-section {
+    background-color: #e8f5e9; /* Light green background */
+    color: #2e7d32; /* Dark green text color */
+}
+
+/* Testimonials Section Styling */
+.testimonials-section {
+    background-color: #fff3e0; /* Light orange background */
+    color: #ef6c00; /* Dark orange text color */
+}
+
+/* Newsletter Section Styling */
+.newsletter-section {
+    background-color: #f3e5f5; /* Light purple background */
+    color: #6a1b9a; /* Dark purple text color */
+}
+/* Styling for headings and text in each section */
+.hero h2,
+.reservations-section h2,
+.menu-section h2,
+.testimonials-section h2,
+.newsletter-section h2,
+.location-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Styling for forms and buttons */
+input, button {
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #00796b; /* Accent color for buttons */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004d40; /* Darker accent color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 28px;
+    }
+
+    input, button {
+        width: 90%;
+    }
+}
+
+
+/* Responsive Map Styles */
+.map-responsive {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; /* Remove border */
+    border-radius: 10px; /* Optional: add rounded corners */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .menu-item {
+        flex-direction: column; /* Stack menu items vertically */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

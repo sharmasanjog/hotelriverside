@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms - The River Side Restaurant and Lodge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Rooms</h1>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="menu-toggle">&#9776;</div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+       <!-- Rooms Section -->
+    <section style="padding: 2em; text-align: center; background-color: #f7f7f7;">
+        <h2 style="font-size: 2em; margin-bottom: 0.5em;">Our Rooms</h2>
+        <p style="margin-bottom: 1.5em; font-size: 1.2em; color: #555;">We offer a variety of rooms to suit every need, from cozy single rooms to luxurious suites.</p>
+
+        <!-- Room Images Gallery -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1em;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <img src="image/Room 1.jpg" alt="Room 1" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+            </div>
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <img src="image/Room 2.jpg" alt="Room 2" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+            </div>
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <img src="image/Room 3.jpg" alt="Room 3" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+            </div>
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <img src="image/Room 5.jpg" alt="Room 4" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+            </div>
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <img src="image/Room 4.jpg" alt="Room 5" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 The River Side Restaurant and Lodge</p>
+    </footer>
+
+    <!-- Include script for menu toggle functionality -->
+    <script src="script.js"></script>
+    <!-- Hover Effect for Images -->
+    <script>
+        // JavaScript for image hover effect
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('mouseover', () => {
+                img.style.transform = 'scale(1.05)';
+            });
+            img.addEventListener('mouseout', () => {
+                img.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>

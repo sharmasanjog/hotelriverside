@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The River Side Restaurant and Lodge</title>
+    
+    <!-- Schema Markup in JSON-LD format -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LodgingBusiness",
+            "name": "The River Side Restaurant and Lodge",
+            "image": "https://hotelriverside.com/image/lodge.jpg",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Kunabang",
+                "addressLocality": "Musikot",
+                "addressRegion": "Karnali",
+                "postalCode": "12345",
+                "addressCountry": "Nepal"
+            },
+            "telephone": "088-530333",
+            "url": "https://hotelriverside.com",
+            "description": "The River Side Restaurant and Lodge offers a serene escape by the riverside, featuring luxurious rooms and a riverside dining experience.",
+            "priceRange": "$$",
+            "amenities": [
+                "Free WiFi",
+                "Swimming Pool",
+                "Restaurant",
+                "Free Parking",
+                "Fitness Center"
+            ],
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 27.7172,
+                "longitude": 85.3240
+            },
+            "sameAs": [
+                "https://facebook.com/YourPage",
+                "https://instagram.com/YourPage"
+            ],
+            "openingHours": "24 hours"
+        }
+        </script>
+    
+    
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for icons -->
+</head>
+<body>
+    <header class="header">
+        <h1 class="main-headline">The River Side Restaurant and Lodge</h1>
+        <div class="menu-toggle">&#9776;</div> <!-- Mobile Menu Toggle Button -->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>  
+      
+
+    <section class="hero">
+        <h2 class="animated-text">Welcome to Your Perfect Getaway</h2>
+        <p class="animated-text">Enjoy the tranquility by the riverside with luxurious accommodation and delightful meals.</p>
+    </section>
+
+    <!-- Reservations Section -->
+    <section id="reservations" class="reservations-section">
+        <h2>Make a Reservation</h2>
+        <form action="submit_reservation.php" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="date" placeholder="Reservation Date" required>
+            <input type="time" name="time" required>
+            <input type="number" name="guests" placeholder="Number of Guests" required>
+            <button type="submit">Reserve Now</button>
+        </form>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <img src="image/dish1.jpg" alt="Dish 1">
+            <h3>Chicken khana set</h3>
+            <p>Description of Dish 1.</p>
+            <p>Price: Rs.300</p>
+        </div>
+        <div class="menu-item">
+            <img src="image/dish2.jpg" alt="Dish 2">
+            <h3>Chicken roti set</h3>
+            <p>Description of Dish 2.</p>
+            <p>Price: Rs.300</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <h2>What Our Customers Say</h2>
+        <blockquote>"Amazing food and great atmosphere!" - Customer Name</blockquote>
+        <blockquote>"The best dining experience I've had!" - Customer Name</blockquote>
+    </section>
+
+    <!-- Newsletter Signup Section -->
+    <section id="newsletter" class="newsletter-section">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form action="subscribe.php" method="post">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section">
+        <h2>Our Location</h2>
+        <div class="map-responsive">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19192.11647075249!2d82.4659492!3d28.6199117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39bd5b71258a8c1f%3A0x514358ef7df508e7!2sHotel%20riverside!5e0!3m2!1sen!2sus!4v1628948275556!5m2!1sen!2sus" 
+                allowfullscreen="" 
+                loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Inline CSS for New Sections -->
+    <style>
+        .reservations-section, .menu-section, .testimonials-section, .newsletter-section, .location-section {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: white;
+            margin-bottom: 20px;
+        }
+
+        .menu-item {
+            margin: 20px 0;
+        }
+
+        .menu-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input, button {
+            margin: 10px;
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+        }
+    </style>
+
+
+
+
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61566721060166" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="https://www.facebook.com/profile.php?id=61566721060166" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+        <p>&copy; 2024 The River Side Restaurant and Lodge. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
